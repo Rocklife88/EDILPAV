@@ -1,42 +1,47 @@
 <template>
-  <div class="bg-white h-fullh-full md:min-h-[600px] py-12">
-    <div class="container mx-auto flex flex-col md:flex-row items-center justify-center ">
-      <!-- Sezione di testo -->
-      <div class="text-center md:text-left md:w-1/2 px-6 pt-6">
-        <img class="w-24 md:w-30 mx-auto md:mx-0" src="/assets/images/logo_aicslucca.png" alt="Logo AICS Lucca">
-        <h2 class="text-3xl md:text-4xl font-semibold mb-4 text-primaryDark">Chi siamo</h2>
-        <p class="md:text-xl mb-6 text-left text-paragraphText">
-          Il Comitato Provinciale A.I.C.S. di Lucca è l’articolazione territoriale
-          dell’Associazione Italiana Cultura e Sport, Ente di Promozione Sportiva
-          riconosciuto dal CONI, Ente con carattere assistenziale riconosciuto dal
-          Ministero degli Interni e Associazione di Promozione Sociale iscritta
-          nel Registro Nazionale delle Associazioni di Promozione Sociale.
+  <section class="bg-background py-16 md:py-24 text-textDark">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-center gap-10 px-4">
+      
+      <!-- Sezione Testo -->
+      <div class="md:w-1/2 text-center md:text-left">
+        <img class="w-28 mx-auto md:mx-0 mb-4" src="" alt="Logo Edilpav" />
+        
+        <h2 class="text-4xl md:text-5xl font-extrabold text-primary mb-4">
+          Chi Siamo
+        </h2>
+        
+        <p class="text-lg md:text-xl text-paragraphText leading-relaxed">
+          Siamo due fratelli piastrellisti di <strong>Lucca</strong> con oltre <strong>25 anni di esperienza</strong> nel settore edilizio. 
+          Specializzati nella <strong>posa di pavimenti e rivestimenti</strong> in gres, ceramica, marmo, mosaico e parquet, offriamo soluzioni su misura 
+          per ogni esigenza. Edilpav è sinonimo di <strong>qualità artigianale</strong> e professionalità, con un occhio di riguardo per i dettagli 
+          e le finiture che fanno la differenza.
         </p>
+
+
       </div>
 
-      <!-- Sezione dell'immagine con bilanciamento migliorato -->
-      <div class="md:w-1/2 mx-auto pb-6 md:mx-0 flex justify-center items-center">
-        <!-- Immagine significativa che rimanda ai social -->
-        <a href="https://www.facebook.com/aicscomitatoprovinciale.lucca/" target="_blank" rel="noopener noreferrer">
-          <img 
-            src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?fit=crop&w=1200&q=80" 
-            alt="Sport Image"
-            class="rounded-lg img p-6 md:p-0 w-full md:min-h-[400px] hover:opacity-90 transition duration-300"
-          />
-        </a>
+      <!-- Sezione Immagine -->
+      <div class="md:w-1/2 flex justify-center items-center">
+        <img 
+          src="/assets/core-images/pavement_1.jpg" 
+          alt="Lavorazione Edilpav"
+          class="rounded-xl shadow-lg w-full max-w-md hover:opacity-90 transition duration-300"
+        />
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
+interface Props {}
+
+const props = withDefaults(defineProps<Props>(), {});
 </script>
 
 <style scoped>
-/* Stile per l'immagine */
-.img {
-  width: 100%;
-  max-width: 440px; /* Limita la larghezza per adattarsi meglio allo schermo */
+/* Responsive Image Handling */
+img {
+  max-width: 100%;
   height: auto;
 }
 </style>

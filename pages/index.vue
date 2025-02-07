@@ -1,13 +1,13 @@
 <template>
   <div>
-    <HomeHeroVideo />
+    <HomeHeroSection />
     <HomeContent />
   </div>
 </template>
 
 <script setup>
 useHead({
-  title: 'Aics Lucca',
+  title: 'Edilpav',
 })
 
 

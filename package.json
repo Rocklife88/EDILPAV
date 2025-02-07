@@ -18,6 +18,7 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@nuxtjs/google-fonts": "^3.2.0",
     "@vueuse/nuxt": "^10.9.0",
     "iframely": "^2.3.0"
   }

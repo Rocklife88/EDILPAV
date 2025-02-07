@@ -1,9 +1,9 @@
 <template>
   <div class=" ">
     <HomeChiSiamo/>
-  <HomeAicsAppSection/>
-  <HomeAppFeature/>
-  <HomeAicsPhotoGallery/>
-  <HomeSocialSection/>
+   <HomeServizi/>
+  <HomePhotoGallery/>
+  <HomeLocation/>
+
   </div>
 </template>

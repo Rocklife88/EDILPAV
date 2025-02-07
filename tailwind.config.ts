@@ -10,22 +10,20 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        primary: '#900001',         
-        primaryLighter: '#b40000', 
-        primaryLight: '#d20000',    
-        primaryDark: '#183462',    
-        primaryDarker: '#183462',   
-        primaryAccent: '#d20222',  
-        secondaryAccent: '#318343',
-        paragraphText:'#6b7280',
+      fontFamily: {
+        sans: ["Montserrat", "sans-serif"],
       },
-      linearGradientColors: {
-        'blue-gradient':['#d20000', '#900001', '#540000'],  
-        'primary-gradient': ['#d20000', '#900001', '#540000'], 
+      colors: {
+        primary: "#A67C52",       // Marrone caldo (legno chiaro)
+        primaryLight: "#D8BFAA",  // Beige caldo per hover/sfondi
+        background: "#F9F6F1",    // Avorio chiaro per lo sfondo principale
+        accent: "#E0D6C3",        // Sabbia elegante per dettagli secondari
+        textDark: "#3C3C3C",      // Grigio antracite per il testo principale
+        textLight: "#FFFFFF",     // Bianco per testi su sfondi scuri
+        woodTone: "#C9A27E",      // Tono caldo del legno chiaro per hover
+        stoneGray: "#B0AFAF",     // Grigio pietra per sfondi neutri
       },
     },
   },
-  
-  
-}
+  plugins: [],
+};
